@@ -17,7 +17,7 @@ The web app is deployed at:
 
 
 ### Technologies
-Node.js, Express.js, Mongoose, React, MongoDB, JWT, Render
+Node.js, Express.js, Mongoose, React, MongoDB, JWT, bcrypt, cors, axios, Render
 
 
 ### Outstanding Bugs
@@ -27,4 +27,4 @@ Node.js, Express.js, Mongoose, React, MongoDB, JWT, Render
 Matt Foster
 
 ## Links
-Github Repo: 
+Github Repo: https://github.com/MFoster17/mp3-booking-app

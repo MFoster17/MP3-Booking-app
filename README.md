@@ -47,6 +47,8 @@ Node.js, Express.js, Mongoose, React, MongoDB, JWT, bcrypt, cors, axios, Render
 
 ## Contributors
 Matt Foster
+Michael Murphy
+Stack Overflow
 
 ## Links
 Github Repo: https://github.com/MFoster17/mp3-booking-app

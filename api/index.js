@@ -7,6 +7,10 @@ import hotelsRoute from "./routes/hotels.js";
 import roomsRoute from "./routes/rooms.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
+import path from "path";
+import { getGlobals } from 'common-es'
+
+const { __dirname, __filename } = getGlobals(import.meta.url)
 
 const app = express();
 dotenv.config();
@@ -45,7 +49,16 @@ app.use((err, req, res, next) => {
   });
 });
 
-app.listen(8900, () => {
+// Handle all GET requests
+app.get('/*', function(req, res) {
+  res.sendFile(path.join(__dirname, '../client/booking-app/public/index.html'), function(err) {
+    if (err) {
+      res.status(500).send(err);
+    }
+  });
+});
+
+app.listen(8700, () => {
   connect();
   console.log("Connected to backend.");
 });
